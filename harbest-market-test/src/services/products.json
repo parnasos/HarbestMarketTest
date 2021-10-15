@@ -1,0 +1,44 @@
+[
+  {
+    "id": "id-1",
+    "name": "Alcachofa",
+    "status": "disponible",
+    "price": "7€/Kg",
+    "image": "https://harbestmarket.com/wp-content/uploads/2021/02/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_alcachofa_blanca_tudela_1-600x800.jpg"
+  },
+  {
+    "id": "id-2",
+    "name": "Berenjena",
+    "status": "disponible",
+    "price": "3€/Kg",
+    "image": "https://harbestmarket.com/wp-content/uploads/2021/07/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_miniberenjena-600x800.jpg"
+  },
+  {
+    "id": "id-3",
+    "name": "Borraja",
+    "status": "disponible",
+    "price": "3€/Kg",
+    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_borraja_ecologica-600x800.jpg"
+  },
+  {
+    "id": "id-4",
+    "name": "calabaza",
+    "status": "disponible",
+    "price": "4€/Kg",
+    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_calabaza_cacahuete_1-scaled-1-600x800.jpg"
+  },
+  {
+    "id": "id-5",
+    "name": "Tomate",
+    "status": "no disponible",
+    "price": "5€/Kg",
+    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_tomate_maduro_en_rama-600x800.jpg"
+  },
+  {
+    "id": "id-6",
+    "name": "Zanahoria",
+    "status": "no disponible",
+    "price": "3€/Kg",
+    "image": "https://harbestmarket.com/wp-content/uploads/2021/03/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_zanahoria_ecol-600x800.jpg"
+  }
+]
