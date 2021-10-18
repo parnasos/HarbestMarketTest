@@ -4,41 +4,47 @@
     "name": "Alcachofa",
     "status": "en stock",
     "price": "7€/Kg",
-    "image": "https://harbestmarket.com/wp-content/uploads/2021/02/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_alcachofa_blanca_tudela_1-600x800.jpg"
+    "image": "https://harbestmarket.com/wp-content/uploads/2021/02/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_alcachofa_blanca_tudela_1-600x800.jpg",
+    "description": "Primera alcachofas blancas de Tudela. Recolectadas con rabo y hojas."
   },
   {
     "id": 2,
     "name": "Berenjena",
     "status": "en stock",
     "price": "3€/Kg",
-    "image": "https://harbestmarket.com/wp-content/uploads/2021/07/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_miniberenjena-600x800.jpg"
+    "image": "https://harbestmarket.com/wp-content/uploads/2021/07/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_miniberenjena-600x800.jpg",
+    "description": "Berenjena negra ecológica. Color morado oscuro y carne blanca. Sabor y 100% natural."
   },
   {
     "id": 3,
     "name": "Borraja",
     "status": "en stock",
     "price": "3€/Kg",
-    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_borraja_ecologica-600x800.jpg"
+    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_borraja_ecologica-600x800.jpg",
+    "description": "Sabor suave, delicado y algo dulce. Verdura del norte, ecológica, con sabor y con nombre y apellidos."
   },
   {
     "id": 4,
     "name": "calabaza",
     "status": "en stock",
     "price": "4€/Kg",
-    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_calabaza_cacahuete_1-scaled-1-600x800.jpg"
+    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_calabaza_cacahuete_1-scaled-1-600x800.jpg",
+    "description": "Calabaza de piel clara, carne naranja y dulce. Son calabazas que pesan aproximadamente 1 kg."
   },
   {
     "id": 5,
     "name": "Tomate",
     "status": "no disponible",
     "price": "5€/Kg",
-    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_tomate_maduro_en_rama-600x800.jpg"
+    "image": "https://harbestmarket.com/wp-content/uploads/2020/11/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_tomate_maduro_en_rama-600x800.jpg",
+    "description": "Tomate maduro en la mata. Perfecto para rallar, salsas, y gazpachos."
   },
   {
     "id": 6,
     "name": "Zanahoria",
     "status": "no disponible",
     "price": "3€/Kg",
-    "image": "https://harbestmarket.com/wp-content/uploads/2021/03/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_zanahoria_ecol-600x800.jpg"
+    "image": "https://harbestmarket.com/wp-content/uploads/2021/03/Harbest_market_hortalizas_verduras_frutas_distribuidor_restaurante_zanahoria_ecol-600x800.jpg",
+    "description": "Manojos de zanahoria ecológica."
   }
 ]

@@ -14,12 +14,13 @@
 }
 .detail__img {
   width: 200px;
-  margin: 30px;
+  margin: 30px 45px 30px 30px;
   border-radius: 9px;
 }
 .card__titleD {
   margin: 0;
   font-size: 20px;
+  text-decoration: underline;
 }
 .card__details {
   text-align: left;
@@ -33,4 +34,5 @@
 }
 .card__details--item {
   padding: 7px 0;
+  margin-right: 30px;
 }

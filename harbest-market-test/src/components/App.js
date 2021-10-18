@@ -18,7 +18,7 @@ function App() {
     LsToExport.get("filterStatus", "")
   );
 
-  console.log(productsLocalStorage);
+  //console.log(productsLocalStorage);
   useEffect(() => {
     if (products.length === 0) {
       setproducts(GetData);
