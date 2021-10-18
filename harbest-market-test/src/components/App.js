@@ -1,47 +1,60 @@
 import React, { useState, useEffect } from "react";
 import { Link, Route, Switch } from "react-router-dom";
-import GetJSONData from "../services/GetData";
+//import GetJSONData from "../services/GetData";
+import GetData from "../services/GetData.json";
+import ProductList from "./ProductList";
 import ProductDetail from "./ProductDetail";
-import ls from "../services/local-storage";
-// import logo from "../images/logo.png";
+import Filter from "./Filter";
+import LsToExport from "../services/local-storage";
 import "../stylesheets/App.scss";
 
 function App() {
-  const productsLocalStorage = ls.get("products", []); //el segundo parámetro corresponde a defaultData
+  const productsLocalStorage = LsToExport.get("products", []); //el segundo parámetro corresponde a defaultData
   const [products, setproducts] = useState(productsLocalStorage);
-  const [filterName, setFilterName] = useState(ls.get("filterName", "")); //string vacío hace que nos muestre todos los productos.
-  const [filterStatus, setFilterStatus] = useState(ls.get("filterStatus", ""));
+  const [filterName, setFilterName] = useState(
+    LsToExport.get("filterName", "")
+  ); //string vacío hace que nos muestre todos los productos.
+  const [filterStatus, setFilterStatus] = useState(
+    LsToExport.get("filterStatus", "")
+  );
 
-  //UseEffect
-
+  console.log(productsLocalStorage);
   useEffect(() => {
     if (products.length === 0) {
-      GetJSONData().then((productData) => {
-        setproducts(productData);
-      });
+      setproducts(GetData);
     }
   }, []);
 
   useEffect(() => {
-    ls.set("products", products);
+    LsToExport.set("products", products);
   }, [products]); //guardo en en el array siempre que cambia products
 
   useEffect(() => {
-    ls.set("filterStatus", filterStatus);
+    LsToExport.set("filterStatus", filterStatus);
   }, [filterStatus]);
+
+  useEffect(() => {
+    LsToExport.set("filterName", filterName);
+  }, [filterName]);
 
   //Handle Function
 
   const handleFilter = (data) => {
-    if (data.key === "Status") {
+    if (data.key === "name") {
+      setFilterName(data.value);
+    } else if (data.key === "status") {
       setFilterStatus(data.value);
     }
   };
 
   // render
-  const filteredproducts = products.filter((product) => {
-    return product.Status.toLowerCase().includes(filterStatus.toLowerCase());
-  });
+  const filteredproducts = products
+    .filter((product) => {
+      return product.name.toLowerCase().includes(filterName.toLowerCase());
+    })
+    .filter((product) => {
+      return product.status.toLowerCase().includes(filterStatus.toLowerCase());
+    });
   const renderProductDetail = (props) => {
     const routeChId = parseInt(props.match.params.productId);
     const foundProduct = products.find((product) => {
@@ -54,9 +67,12 @@ function App() {
       return (
         <>
           <div className="unfinded__container">
-            <p className="unfinded__text"> Damn! Product not found, sorry.</p>
+            <p className="unfinded__text">
+              {" "}
+              Lo sentimos, el producto no ha sido encontrado.
+            </p>
             <Link className="unfinded__homepage" to="/">
-              Go back to the Homepage
+              Inicio
             </Link>
           </div>
         </>
@@ -76,7 +92,7 @@ function App() {
           </Link>
         </div>
 
-        {/* <Switch>
+        <Switch>
           <Route exact path="/">
             <Filter handleFilter={handleFilter} filterName={filterName} />
             <ProductList products={filteredproducts} />
@@ -86,7 +102,7 @@ function App() {
             path="/Product/:productId"
             render={renderProductDetail}
           />
-        </Switch> */}
+        </Switch>
       </div>
     </>
   );
