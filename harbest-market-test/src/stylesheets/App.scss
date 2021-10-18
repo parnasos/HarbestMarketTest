@@ -1,11 +1,60 @@
+@import "./ProductList.scss";
+@import "./ProductDetail.scss";
+@import "./Product.scss";
+@import "./Filter.scss";
+
 .App {
   width: 100%;
   text-align: center;
-  vertical-align: middle;
-  background-color: #282c34;
-  height: 150px;
-  //color: aliceblue;
+  background-color: #969aa1;
+  color: rgb(11, 90, 44);
+  letter-spacing: 3px;
+}
+
+.logo__container {
+  background-color: #969aa1;
+  justify-content: center;
+  margin: 50px auto 30px auto;
+  width: 500px;
+  @media (max-width: 768px) {
+    width: 300px;
+  }
+  padding: 40px 10px;
 }
 .logo {
-  margin: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.backToHomepage {
+  display: block;
+  color: #1a7009;
+  margin: auto;
+}
+.unfinded__container {
+  height: 66.3vh;
+}
+.unfinded__text {
+  font-size: 30px;
+  padding: 60px;
+  text-transform: uppercase;
+}
+
+.unfinded__homepage {
+  display: block;
+  color: #e46e0b;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -14,7 +14,7 @@ const FilterStatus = (props) => {
       </label>
 
       <select
-        className="form__input Status"
+        className="form__input status"
         name="status"
         id="status"
         value={props.filterStatus}

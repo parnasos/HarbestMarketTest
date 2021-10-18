@@ -18,7 +18,10 @@ const Product_resume = (props) => {
             {" "}
             Disponibilidad: {props.product.status}
           </h5>
-          <h5 className="card__price"> Precio: {props.product.price}</h5>
+          <h5 className="card__description--2">
+            {" "}
+            Precio: {props.product.price}
+          </h5>
         </section>
       </article>
     </Link>

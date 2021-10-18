@@ -16,14 +16,17 @@ const ProductList = (props) => {
     return (
       <>
         <div className="warning__container">
-          <p className="warning__text"> Lo sentimos, el producto no está disponible.</p>
+          <p className="warning__text">
+            {" "}
+            Lo sentimos, el producto no está disponible.
+          </p>
         </div>
       </>
     );
   } else {
     return (
       <section>
-        <ul className="Product__list">{productElements}</ul>
+        <ul className="product__list">{productElements}</ul>
       </section>
     );
   }
